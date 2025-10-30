@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Sosa</title>
+</head>
+
+<body>
+    <h1> HOLA HTML </h1>
+    <form data-th-object="${nuevoAlumno}" data-th-action="${band}?@{/modificarAlumno}:@{/guardarAlumno}" method="post"
+        enctype="multipart/form-data">
+        <label>DNI</label>
+        <input type="text" placeholder="ingresar DNI sin puntos ni comas" data-th-field="*{dni}" required
+            data-th-readonly="${band}" />
+        <label>Nombre</label>
+        <input type="text" placeholder="ingresar nombre" data-th-field="*{nombre}" minlength="5" maxlength="20" />
+        <label>Apellido</label>
+        <input type="text" placeholder="ingresar apellido" data-th-field="*{apellido}" />
+        <span data-th-if="${#fields.hasErrors('apellido')}" data-th-errors="*{apellido}" class="text-danger">
+            Error en el apellido
+        </span>
+
+        <button type="submit" th:text="${band} ? 'Modificar' : 'Ingresar'"></button>
+    </form>
+</body>
+
+</html>

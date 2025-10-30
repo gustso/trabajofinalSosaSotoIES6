@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            encabezado
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Docentes</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Carga de Docentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mostrar Docentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <form>
+                <div class="row">
+                <div class="col-6">
+                    <label for="apellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" placeholder="ingrese su apellido completo" required>
+                </div>
+                <div class="col-6">
+                    <label for="nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+                </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+<div class="mb-3">
+                    <label for="fechaN" class="form-label">Fecha Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaN">
+                </div>
+
+                <div class="form-check">
+  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+  <label class="form-check-label" for="radioDefault1">
+    Femenino
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" >
+  <label class="form-check-label" for="radioDefault2">
+    Masculino
+  </label>
+</div>
+                <button type="submit" class="btn btn-primary">Cargar Docente</button>
+            </form>
+
+
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col-2">
+                        <article> articulo 1 </article>
+                    </div>
+                    <div class="col-8">
+                        <article> articulo 2</article>
+                    </div>
+                    <div class="col-2">
+                        <article> articulo 3 </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="background-color: aqua;" class="col-7">columna de 9 espacios bootstrap</div>
+                    <div style="background-color: rgb(21, 79, 79);" class="col-3">columna de 3 espacios bootstrap</div>
+                    <div style="background-color: rgb(211, 71, 106);" class="col-2">columna de 6 espacios bootstrap
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <footer> pie de pagina </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
