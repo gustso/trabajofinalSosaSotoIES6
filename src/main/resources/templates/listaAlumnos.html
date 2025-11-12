@@ -10,6 +10,8 @@
 </head>
 
 <body>
+	<div data-th-replace="~{layout :: header}"></div>
+
 	<div class="container">
 		<div data-th-if="${correcto}" class="alert alert-success">
 			<span data-th-text="${correcto}"></span>

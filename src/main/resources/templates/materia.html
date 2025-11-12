@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form data-th-object="${nuevaMateria}"
+            th:action="@{'/guardarMateria'}" method="post">
+
+            <div class="mb-e">
+                <label class="form-label">Docente:</label>
+                <input type="number" data-th-field="*{docente.legajo}" >
+                <label class="form-label">Estudiantes:</label>
+                <select th:field="*{alumno}" class="form-control" required>
+                    <option value="">Seleccionar estudiante...</option>
+                    <option th:each="alum : ${lista}" th:value="${alum.dni}"
+                        th:text="${alum.nombre + ' ' + alum.apellido}"></option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
